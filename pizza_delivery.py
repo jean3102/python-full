@@ -21,7 +21,6 @@ if size_choice == "s":
     TOTAL_PRICE = SMALL_PIZZA_PRICE
     if peperoni == "y":
         TOTAL_PRICE += 2
-        print(f'''{TOTAL_PRICE=}''')
 
 if size_choice == "m":
     TOTAL_PRICE = MEDIUM_PIZZA_PRICE
@@ -35,7 +34,7 @@ if extra_cheese == "y":
 if peperoni == "y":
     TOTAL_PRICE += 3
 
-if peperoni == "y" and size_choice != "S":
+if peperoni == "y" and size_choice != "s":
     TOTAL_PRICE += 1
 
 print(f"Your final bill is: {TOTAL_PRICE}")
